@@ -23,7 +23,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" attributes="0">
               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
@@ -60,6 +60,7 @@
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="customerid" alignment="0" min="-2" pref="155" max="-2" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -75,33 +76,83 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="roombookingnumber" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jLabel4" alignment="0" pref="130" max="32767" attributes="0"/>
-                                  <Component id="roomnumber" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="roombookingnotext" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="roombookingnolable" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="refreshmentText" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="refreshmentlable" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="roombookingnumber" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="roombookingnumberlable" alignment="0" pref="130" max="32767" attributes="0"/>
+                                          <Component id="roomnumber" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="roomnumberlable" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="starttime" max="32767" attributes="0"/>
+                                          <Component id="starttimestamplable" pref="162" max="32767" attributes="0"/>
+                                          <Component id="refreshmentidlable" max="32767" attributes="0"/>
+                                          <Component id="refreshmentid" max="32767" attributes="0"/>
+                                          <Component id="addRefreshmentButton" max="32767" attributes="0"/>
+                                          <Component id="resourceidlable" max="32767" attributes="0"/>
+                                          <Component id="resourceidtext" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="customeridlable" min="-2" pref="155" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="roomnolable" pref="125" max="32767" attributes="0"/>
+                                          <Component id="roomno" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="starttime" max="32767" attributes="0"/>
-                                  <Component id="jLabel2" pref="162" max="32767" attributes="0"/>
-                                  <Component id="jLabel5" max="32767" attributes="0"/>
-                                  <Component id="refreshmentid" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="endtime" max="32767" attributes="0"/>
-                                  <Component id="jLabel3" max="32767" attributes="0"/>
-                                  <Component id="deliverytime" max="32767" attributes="0"/>
-                                  <Component id="jLabel6" pref="198" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="addcleaner" max="32767" attributes="0"/>
-                                  <Component id="addrefreshmentbooking" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="endtime" max="32767" attributes="0"/>
+                                          <Component id="endtimestamplable" max="32767" attributes="0"/>
+                                          <Component id="deliverytime" max="32767" attributes="0"/>
+                                          <Component id="deliverytimestamplable" pref="198" max="32767" attributes="0"/>
+                                          <Component id="resorcelable" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="resourcefield" max="32767" attributes="0"/>
+                                          <Component id="deliverytimelable" max="32767" attributes="0"/>
+                                          <Component id="deliveryTimeText" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="addcleaner" max="32767" attributes="0"/>
+                                          <Component id="addrefreshmentbooking" max="32767" attributes="0"/>
+                                          <Component id="addResorceButton" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="addresourcebookingbutton" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="starttimetext" alignment="1" min="-2" pref="151" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                              <Component id="starttimelable" min="-2" pref="151" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="endtimelable" min="-2" pref="116" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                              <Component id="endtimetext" min="-2" pref="116" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                      <Component id="bookaroombutton" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace min="0" pref="74" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="31" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -154,9 +205,9 @@
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="roomnumberlable" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="starttimestamplable" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="endtimestamplable" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -167,9 +218,9 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="roombookingnumberlable" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="refreshmentidlable" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="deliverytimestamplable" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -178,7 +229,47 @@
                   <Component id="deliverytime" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="addrefreshmentbooking" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="24" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="refreshmentlable" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="resorcelable" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="refreshmentText" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="addRefreshmentButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="resourcefield" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="addResorceButton" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="roombookingnolable" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="resourceidlable" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="deliverytimelable" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="roombookingnotext" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="resourceidtext" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="deliveryTimeText" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="addresourcebookingbutton" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="customeridlable" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="roomnolable" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="starttimelable" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="endtimelable" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="customerid" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="roomno" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="starttimetext" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="endtimetext" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="bookaroombutton" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="17" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -256,7 +347,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="addCustomerRecord">
       <Properties>
-        <Property name="text" type="java.lang.String" value="add record"/>
+        <Property name="text" type="java.lang.String" value="add customer"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addCustomerRecordActionPerformed"/>
@@ -335,21 +426,21 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="roomnumberActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="roomnumberlable">
       <Properties>
         <Property name="text" type="java.lang.String" value="room number"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="starttime">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel2">
+    <Component class="javax.swing.JLabel" name="starttimestamplable">
       <Properties>
         <Property name="text" type="java.lang.String" value="start timestamp"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="endtime">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
+    <Component class="javax.swing.JLabel" name="endtimestamplable">
       <Properties>
         <Property name="text" type="java.lang.String" value="end timestamp"/>
       </Properties>
@@ -362,14 +453,14 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addcleanerActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel4">
+    <Component class="javax.swing.JLabel" name="roombookingnumberlable">
       <Properties>
         <Property name="text" type="java.lang.String" value="room booking number"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="roombookingnumber">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
+    <Component class="javax.swing.JLabel" name="refreshmentidlable">
       <Properties>
         <Property name="text" type="java.lang.String" value="refreshment id"/>
       </Properties>
@@ -378,7 +469,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="deliverytime">
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel6">
+    <Component class="javax.swing.JLabel" name="deliverytimestamplable">
       <Properties>
         <Property name="text" type="java.lang.String" value="delivery timestamp"/>
       </Properties>
@@ -389,6 +480,107 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addrefreshmentbookingActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="refreshmentlable">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="refreshment"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="resorcelable">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="resource"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="refreshmentText">
+    </Component>
+    <Component class="javax.swing.JButton" name="addRefreshmentButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="add refreshment"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addRefreshmentButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="resourcefield">
+    </Component>
+    <Component class="javax.swing.JButton" name="addResorceButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="add resource"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addResorceButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="roombookingnolable">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="room booking number"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="resourceidlable">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="resource ID"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="deliverytimelable">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="delivery timestamp"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="roombookingnotext">
+    </Component>
+    <Component class="javax.swing.JTextField" name="resourceidtext">
+    </Component>
+    <Component class="javax.swing.JTextField" name="deliveryTimeText">
+    </Component>
+    <Component class="javax.swing.JButton" name="addresourcebookingbutton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="add resource booking"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addresourcebookingbuttonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="customeridlable">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="customer ID"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="roomnolable">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="room number"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="bookaroombutton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="book a room"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bookaroombuttonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="starttimelable">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="start timestamp"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="endtimelable">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="end timestamp"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="customerid">
+    </Component>
+    <Component class="javax.swing.JTextField" name="roomno">
+    </Component>
+    <Component class="javax.swing.JTextField" name="starttimetext">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="starttimetextActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="endtimetext">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="endtimetextActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

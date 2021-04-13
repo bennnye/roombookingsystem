@@ -34,6 +34,39 @@ public class recordDisplay extends javax.swing.JFrame {
         deleteresourcebutton.setVisible(false);
         deleteroombookingbutton.setVisible(false);
         deletecleanerslotbutton.setVisible(false);
+        addRefreshmentButton.setVisible(false);
+            addResorceButton.setVisible(false);
+            addcleaner.setVisible(false);
+            addrefreshmentbooking.setVisible(false);
+            addresourcebookingbutton.setVisible(false);
+            bookaroombutton.setVisible(false);
+            deliveryTimeText.setVisible(false);
+            deliverytime.setVisible(false);
+            deliverytimelable.setVisible(false);
+            deliverytimestamplable.setVisible(false);
+            endtime.setVisible(false);
+            endtimelable.setVisible(false);
+            endtimestamplable.setVisible(false);
+            endtimetext.setVisible(false);
+            refreshmentText.setVisible(false);
+            refreshmentid.setVisible(false);
+            refreshmentidlable.setVisible(false);
+            resorcelable.setVisible(false);
+            resourcefield.setVisible(false);
+            resourceidlable.setVisible(false);
+            resourceidtext.setVisible(false);
+            roombookingnolable.setVisible(false);
+            roombookingnotext.setVisible(false);
+            roombookingnumber.setVisible(false);
+            roombookingnumberlable.setVisible(false);
+            roomno.setVisible(false);
+            roomnolable.setVisible(false);
+            roomnumber.setVisible(false);
+            roomnumberlable.setVisible(false);
+            starttime.setVisible(false);
+            starttimelable.setVisible(false);
+            starttimestamplable.setVisible(false);
+            starttimetext.setVisible(false);
     }
 
     /**
@@ -66,19 +99,41 @@ public class recordDisplay extends javax.swing.JFrame {
         deleteroombookingbutton = new javax.swing.JButton();
         deletecleanerslotbutton = new javax.swing.JButton();
         roomnumber = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
+        roomnumberlable = new javax.swing.JLabel();
         starttime = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        starttimestamplable = new javax.swing.JLabel();
         endtime = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        endtimestamplable = new javax.swing.JLabel();
         addcleaner = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        roombookingnumberlable = new javax.swing.JLabel();
         roombookingnumber = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
+        refreshmentidlable = new javax.swing.JLabel();
         refreshmentid = new javax.swing.JTextField();
         deliverytime = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
+        deliverytimestamplable = new javax.swing.JLabel();
         addrefreshmentbooking = new javax.swing.JButton();
+        refreshmentlable = new javax.swing.JLabel();
+        resorcelable = new javax.swing.JLabel();
+        refreshmentText = new javax.swing.JTextField();
+        addRefreshmentButton = new javax.swing.JButton();
+        resourcefield = new javax.swing.JTextField();
+        addResorceButton = new javax.swing.JButton();
+        roombookingnolable = new javax.swing.JLabel();
+        resourceidlable = new javax.swing.JLabel();
+        deliverytimelable = new javax.swing.JLabel();
+        roombookingnotext = new javax.swing.JTextField();
+        resourceidtext = new javax.swing.JTextField();
+        deliveryTimeText = new javax.swing.JTextField();
+        addresourcebookingbutton = new javax.swing.JButton();
+        customeridlable = new javax.swing.JLabel();
+        roomnolable = new javax.swing.JLabel();
+        bookaroombutton = new javax.swing.JButton();
+        starttimelable = new javax.swing.JLabel();
+        endtimelable = new javax.swing.JLabel();
+        customerid = new javax.swing.JTextField();
+        roomno = new javax.swing.JTextField();
+        starttimetext = new javax.swing.JTextField();
+        endtimetext = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -140,7 +195,7 @@ public class recordDisplay extends javax.swing.JFrame {
             }
         });
 
-        addCustomerRecord.setText("add record");
+        addCustomerRecord.setText("add customer");
         addCustomerRecord.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addCustomerRecordActionPerformed(evt);
@@ -203,11 +258,11 @@ public class recordDisplay extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("room number");
+        roomnumberlable.setText("room number");
 
-        jLabel2.setText("start timestamp");
+        starttimestamplable.setText("start timestamp");
 
-        jLabel3.setText("end timestamp");
+        endtimestamplable.setText("end timestamp");
 
         addcleaner.setText("add cleaner slot");
         addcleaner.addActionListener(new java.awt.event.ActionListener() {
@@ -216,16 +271,74 @@ public class recordDisplay extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setText("room booking number");
+        roombookingnumberlable.setText("room booking number");
 
-        jLabel5.setText("refreshment id");
+        refreshmentidlable.setText("refreshment id");
 
-        jLabel6.setText("delivery timestamp");
+        deliverytimestamplable.setText("delivery timestamp");
 
         addrefreshmentbooking.setText("add refreshment booking");
         addrefreshmentbooking.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addrefreshmentbookingActionPerformed(evt);
+            }
+        });
+
+        refreshmentlable.setText("refreshment");
+
+        resorcelable.setText("resource");
+
+        addRefreshmentButton.setText("add refreshment");
+        addRefreshmentButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addRefreshmentButtonActionPerformed(evt);
+            }
+        });
+
+        addResorceButton.setText("add resource");
+        addResorceButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addResorceButtonActionPerformed(evt);
+            }
+        });
+
+        roombookingnolable.setText("room booking number");
+
+        resourceidlable.setText("resource ID");
+
+        deliverytimelable.setText("delivery timestamp");
+
+        addresourcebookingbutton.setText("add resource booking");
+        addresourcebookingbutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addresourcebookingbuttonActionPerformed(evt);
+            }
+        });
+
+        customeridlable.setText("customer ID");
+
+        roomnolable.setText("room number");
+
+        bookaroombutton.setText("book a room");
+        bookaroombutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bookaroombuttonActionPerformed(evt);
+            }
+        });
+
+        starttimelable.setText("start timestamp");
+
+        endtimelable.setText("end timestamp");
+
+        starttimetext.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                starttimetextActionPerformed(evt);
+            }
+        });
+
+        endtimetext.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                endtimetextActionPerformed(evt);
             }
         });
 
@@ -262,6 +375,7 @@ public class recordDisplay extends javax.swing.JFrame {
                         .addComponent(addCustomerRecord))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(customerid, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
@@ -275,27 +389,65 @@ public class recordDisplay extends javax.swing.JFrame {
                                     .addComponent(deletecleanerslotbutton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(roombookingnumber, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
-                                    .addComponent(roomnumber, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addComponent(roombookingnotext, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(roombookingnolable, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(refreshmentText, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(refreshmentlable, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(roombookingnumber, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(roombookingnumberlable, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
+                                            .addComponent(roomnumber, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(roomnumberlable, javax.swing.GroupLayout.Alignment.LEADING))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(starttime)
+                                            .addComponent(starttimestamplable, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
+                                            .addComponent(refreshmentidlable, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(refreshmentid)
+                                            .addComponent(addRefreshmentButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(resourceidlable, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(resourceidtext)))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                        .addComponent(customeridlable, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(30, 30, 30)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(roomnolable, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
+                                            .addComponent(roomno))))
                                 .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(starttime)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(refreshmentid))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(endtime)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(deliverytime)
-                                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(addcleaner, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(addrefreshmentbooking, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                        .addGap(0, 74, Short.MAX_VALUE)))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(endtime)
+                                            .addComponent(endtimestamplable, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(deliverytime)
+                                            .addComponent(deliverytimestamplable, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE)
+                                            .addComponent(resorcelable, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(resourcefield)
+                                            .addComponent(deliverytimelable, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(deliveryTimeText))
+                                        .addGap(18, 18, 18)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(addcleaner, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(addrefreshmentbooking, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(addResorceButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(addresourcebookingbutton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(starttimetext, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                                .addGap(10, 10, 10)
+                                                .addComponent(starttimelable, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(18, 18, 18)
+                                                .addComponent(endtimelable, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                .addGap(18, 18, 18)
+                                                .addComponent(endtimetext, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGap(26, 26, 26)
+                                        .addComponent(bookaroombutton)))))
+                        .addGap(0, 31, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -338,9 +490,9 @@ public class recordDisplay extends javax.swing.JFrame {
                             .addComponent(addCustomerRecord))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3))
+                    .addComponent(roomnumberlable)
+                    .addComponent(starttimestamplable)
+                    .addComponent(endtimestamplable))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(roomnumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -349,16 +501,50 @@ public class recordDisplay extends javax.swing.JFrame {
                     .addComponent(addcleaner))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6))
+                    .addComponent(roombookingnumberlable)
+                    .addComponent(refreshmentidlable)
+                    .addComponent(deliverytimestamplable))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(roombookingnumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(refreshmentid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(deliverytime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(addrefreshmentbooking))
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(refreshmentlable)
+                    .addComponent(resorcelable))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(refreshmentText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(addRefreshmentButton)
+                    .addComponent(resourcefield, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(addResorceButton))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(roombookingnolable)
+                    .addComponent(resourceidlable)
+                    .addComponent(deliverytimelable))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(roombookingnotext, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(resourceidtext, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(deliveryTimeText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(addresourcebookingbutton))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(customeridlable)
+                    .addComponent(roomnolable)
+                    .addComponent(starttimelable)
+                    .addComponent(endtimelable))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(customerid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(roomno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(starttimetext, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(endtimetext, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bookaroombutton))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
 
         pack();
@@ -388,6 +574,38 @@ public class recordDisplay extends javax.swing.JFrame {
             deleteresourcebutton.setVisible(false);
             deleteroombookingbutton.setVisible(false);
             deletecleanerslotbutton.setVisible(false);
+            addRefreshmentButton.setVisible(false);
+            addcleaner.setVisible(false);
+            addrefreshmentbooking.setVisible(false);
+            addresourcebookingbutton.setVisible(false);
+            bookaroombutton.setVisible(false);
+            deliveryTimeText.setVisible(false);
+            deliverytime.setVisible(false);
+            deliverytimelable.setVisible(false);
+            deliverytimestamplable.setVisible(false);
+            endtime.setVisible(false);
+            endtimelable.setVisible(false);
+            endtimestamplable.setVisible(false);
+            endtimetext.setVisible(false);
+            refreshmentText.setVisible(false);
+            refreshmentid.setVisible(false);
+            refreshmentidlable.setVisible(false);
+            resorcelable.setVisible(false);
+            resourcefield.setVisible(false);
+            resourceidlable.setVisible(false);
+            resourceidtext.setVisible(false);
+            roombookingnolable.setVisible(false);
+            roombookingnotext.setVisible(false);
+            roombookingnumber.setVisible(false);
+            roombookingnumberlable.setVisible(false);
+            roomno.setVisible(false);
+            roomnolable.setVisible(false);
+            roomnumber.setVisible(false);
+            roomnumberlable.setVisible(false);
+            starttime.setVisible(false);
+            starttimelable.setVisible(false);
+            starttimestamplable.setVisible(false);
+            starttimetext.setVisible(false);
             
         } else if (tableSelectBox.getSelectedItem().equals("cleanershedule")){
             deletecleanerslotbutton.setVisible(true);
@@ -406,6 +624,40 @@ public class recordDisplay extends javax.swing.JFrame {
             deleteresourcebookingbutton.setVisible(false);
             deleteresourcebutton.setVisible(false);
             deleteroombookingbutton.setVisible(false);
+            addRefreshmentButton.setVisible(false);
+            addResorceButton.setVisible(false);
+            addcleaner.setVisible(true);
+            addrefreshmentbooking.setVisible(false);
+            addresourcebookingbutton.setVisible(false);
+            bookaroombutton.setVisible(false);
+            deliveryTimeText.setVisible(false);
+            deliverytime.setVisible(false);
+            deliverytimelable.setVisible(false);
+            deliverytimestamplable.setVisible(false);
+            endtime.setVisible(true);
+            endtimelable.setVisible(true);
+            endtimestamplable.setVisible(false);
+            endtimetext.setVisible(false);
+            refreshmentText.setVisible(false);
+            refreshmentid.setVisible(false);
+            refreshmentidlable.setVisible(false);
+            resorcelable.setVisible(false);
+            resourcefield.setVisible(false);
+            resourceidlable.setVisible(false);
+            resourceidtext.setVisible(false);
+            roombookingnolable.setVisible(false);
+            roombookingnotext.setVisible(false);
+            roombookingnumber.setVisible(true);
+            roombookingnumberlable.setVisible(true);
+            roomno.setVisible(false);
+            roomnolable.setVisible(false);
+            roomnumber.setVisible(true);
+            roomnumberlable.setVisible(true);
+            starttime.setVisible(true);
+            starttimelable.setVisible(true);
+            starttimestamplable.setVisible(false);
+            starttimetext.setVisible(false);
+            
         } else if (tableSelectBox.getSelectedItem().equals("refreshmentbookig")){
             deletecleanerslotbutton.setVisible(false);
             deleteCustomerRecord.setVisible(false);
@@ -423,6 +675,40 @@ public class recordDisplay extends javax.swing.JFrame {
             deleteresourcebookingbutton.setVisible(false);
             deleteresourcebutton.setVisible(false);
             deleteroombookingbutton.setVisible(false);
+            addRefreshmentButton.setVisible(false);
+            addResorceButton.setVisible(false);
+            addcleaner.setVisible(false);
+            addrefreshmentbooking.setVisible(true);
+            addresourcebookingbutton.setVisible(false);
+            bookaroombutton.setVisible(false);
+            deliveryTimeText.setVisible(false);
+            deliverytime.setVisible(true);
+            deliverytimelable.setVisible(false);
+            deliverytimestamplable.setVisible(true);
+            endtime.setVisible(false);
+            endtimelable.setVisible(false);
+            endtimestamplable.setVisible(false);
+            endtimetext.setVisible(false);
+            refreshmentText.setVisible(false);
+            refreshmentid.setVisible(true);
+            refreshmentidlable.setVisible(true);
+            resorcelable.setVisible(false);
+            resourcefield.setVisible(false);
+            resourceidlable.setVisible(false);
+            resourceidtext.setVisible(false);
+            roombookingnolable.setVisible(false);
+            roombookingnotext.setVisible(false);
+            roombookingnumber.setVisible(false);
+            roombookingnumberlable.setVisible(false);
+            roomno.setVisible(false);
+            roomnolable.setVisible(false);
+            roomnumber.setVisible(false);
+            roomnumberlable.setVisible(false);
+            starttime.setVisible(false);
+            starttimelable.setVisible(false);
+            starttimestamplable.setVisible(false);
+            starttimetext.setVisible(false);
+            
         }else if (tableSelectBox.getSelectedItem().equals("refreshments")){
             deletecleanerslotbutton.setVisible(false);
             deleteCustomerRecord.setVisible(false);
@@ -440,6 +726,40 @@ public class recordDisplay extends javax.swing.JFrame {
             deleteresourcebookingbutton.setVisible(false);
             deleteresourcebutton.setVisible(false);
             deleteroombookingbutton.setVisible(false);
+            addRefreshmentButton.setVisible(true);
+            addResorceButton.setVisible(false);
+            addcleaner.setVisible(false);
+            addrefreshmentbooking.setVisible(false);
+            addresourcebookingbutton.setVisible(false);
+            bookaroombutton.setVisible(false);
+            deliveryTimeText.setVisible(false);
+            deliverytime.setVisible(false);
+            deliverytimelable.setVisible(false);
+            deliverytimestamplable.setVisible(false);
+            endtime.setVisible(false);
+            endtimelable.setVisible(false);
+            endtimestamplable.setVisible(false);
+            endtimetext.setVisible(false);
+            refreshmentText.setVisible(true);
+            refreshmentid.setVisible(false);
+            refreshmentidlable.setVisible(false);
+            resorcelable.setVisible(false);
+            resourcefield.setVisible(false);
+            resourceidlable.setVisible(false);
+            resourceidtext.setVisible(false);
+            roombookingnolable.setVisible(false);
+            roombookingnotext.setVisible(false);
+            roombookingnumber.setVisible(false);
+            roombookingnumberlable.setVisible(false);
+            roomno.setVisible(false);
+            roomnolable.setVisible(false);
+            roomnumber.setVisible(false);
+            roomnumberlable.setVisible(false);
+            starttime.setVisible(false);
+            starttimelable.setVisible(false);
+            starttimestamplable.setVisible(false);
+            starttimetext.setVisible(false);
+            
         } else if (tableSelectBox.getSelectedItem().equals("resourcebooking")){
             deletecleanerslotbutton.setVisible(false);
             deleteCustomerRecord.setVisible(false);
@@ -457,6 +777,40 @@ public class recordDisplay extends javax.swing.JFrame {
             deleteresourcebookingbutton.setVisible(true);
             deleteresourcebutton.setVisible(false);
             deleteroombookingbutton.setVisible(false);
+            addRefreshmentButton.setVisible(false);
+            addResorceButton.setVisible(false);
+            addcleaner.setVisible(false);
+            addrefreshmentbooking.setVisible(false);
+            addresourcebookingbutton.setVisible(true);
+            bookaroombutton.setVisible(false);
+            deliveryTimeText.setVisible(true);
+            deliverytime.setVisible(false);
+            deliverytimelable.setVisible(true);
+            deliverytimestamplable.setVisible(false);
+            endtime.setVisible(false);
+            endtimelable.setVisible(false);
+            endtimestamplable.setVisible(false);
+            endtimetext.setVisible(false);
+            refreshmentText.setVisible(false);
+            refreshmentid.setVisible(false);
+            refreshmentidlable.setVisible(false);
+            resorcelable.setVisible(false);
+            resourcefield.setVisible(false);
+            resourceidlable.setVisible(true);
+            resourceidtext.setVisible(true);
+            roombookingnolable.setVisible(false);
+            roombookingnotext.setVisible(false);
+            roombookingnumber.setVisible(false);
+            roombookingnumberlable.setVisible(false);
+            roomno.setVisible(false);
+            roomnolable.setVisible(false);
+            roomnumber.setVisible(false);
+            roomnumberlable.setVisible(false);
+            starttime.setVisible(false);
+            starttimelable.setVisible(false);
+            starttimestamplable.setVisible(false);
+            starttimetext.setVisible(false);
+            
         } else if (tableSelectBox.getSelectedItem().equals("resources")){
             deletecleanerslotbutton.setVisible(false);
             deleteCustomerRecord.setVisible(false);
@@ -474,7 +828,40 @@ public class recordDisplay extends javax.swing.JFrame {
             deleteresourcebookingbutton.setVisible(false);
             deleteresourcebutton.setVisible(true);
             deleteroombookingbutton.setVisible(false);
-        } else {
+            addRefreshmentButton.setVisible(false);
+            addResorceButton.setVisible(true);
+            addcleaner.setVisible(false);
+            addrefreshmentbooking.setVisible(false);
+            addresourcebookingbutton.setVisible(false);
+            bookaroombutton.setVisible(false);
+            deliveryTimeText.setVisible(false);
+            deliverytime.setVisible(false);
+            deliverytimelable.setVisible(false);
+            deliverytimestamplable.setVisible(false);
+            endtime.setVisible(false);
+            endtimelable.setVisible(false);
+            endtimestamplable.setVisible(false);
+            endtimetext.setVisible(false);
+            refreshmentText.setVisible(false);
+            refreshmentidlable.setVisible(false);
+            resorcelable.setVisible(true);
+            resourcefield.setVisible(true);
+            resourceidlable.setVisible(false);
+            resourceidtext.setVisible(false);
+            roombookingnolable.setVisible(false);
+            roombookingnotext.setVisible(false);
+            roombookingnumber.setVisible(false);
+            roombookingnumberlable.setVisible(false);
+            roomno.setVisible(false);
+            roomnolable.setVisible(false);
+            roomnumber.setVisible(false);
+            roomnumberlable.setVisible(false);
+            starttime.setVisible(false);
+            starttimelable.setVisible(false);
+            starttimestamplable.setVisible(false);
+            starttimetext.setVisible(false);
+            
+        } else if (tableSelectBox.getSelectedItem().equals("roombooking")){
             deleteCustomerRecord.setVisible(false);
             addCustomerRecord.setVisible(false);
             customerfnametextbox.setVisible(false);
@@ -491,6 +878,90 @@ public class recordDisplay extends javax.swing.JFrame {
             deleteresourcebutton.setVisible(false);
             deleteroombookingbutton.setVisible(true);
             deletecleanerslotbutton.setVisible(false);
+            addRefreshmentButton.setVisible(false);
+            addResorceButton.setVisible(false);
+            addcleaner.setVisible(false);
+            addrefreshmentbooking.setVisible(false);
+            addresourcebookingbutton.setVisible(false);
+            bookaroombutton.setVisible(true);
+            deliveryTimeText.setVisible(false);
+            deliverytime.setVisible(false);
+            deliverytimelable.setVisible(false);
+            deliverytimestamplable.setVisible(false);
+            endtime.setVisible(false);
+            endtimelable.setVisible(false);
+            endtimestamplable.setVisible(true);
+            endtimetext.setVisible(true);
+            refreshmentText.setVisible(false);
+            refreshmentid.setVisible(false);
+            refreshmentidlable.setVisible(false);
+            resorcelable.setVisible(false);
+            resourcefield.setVisible(false);
+            resourceidlable.setVisible(false);
+            resourceidtext.setVisible(false);
+            roombookingnolable.setVisible(true);
+            roombookingnotext.setVisible(true);
+            roombookingnumber.setVisible(false);
+            roombookingnumberlable.setVisible(false);
+            roomno.setVisible(true);
+            roomnolable.setVisible(true);
+            roomnumber.setVisible(false);
+            roomnumberlable.setVisible(false);
+            starttime.setVisible(false);
+            starttimelable.setVisible(false);
+            starttimestamplable.setVisible(true);
+            starttimetext.setVisible(true);
+            
+        } else {
+            deleteCustomerRecord.setVisible(false);
+            addCustomerRecord.setVisible(false);
+            customerfnametextbox.setVisible(false);
+            customerlnametextbox.setVisible(false);
+            companytextbox.setVisible(false);
+            customeremailtextbox.setVisible(false);
+            customerfnamelable.setVisible(false);
+            customerlnamelable.setVisible(false);
+            companynamelable.setVisible(false);
+            customeremaillable.setVisible(false);
+            deleterefreshmentbookingbutton.setVisible(false);
+            deleterefreshmentbutton.setVisible(false);
+            deleteresourcebookingbutton.setVisible(false);
+            deleteresourcebutton.setVisible(false);
+            deleteroombookingbutton.setVisible(false);
+            deletecleanerslotbutton.setVisible(false);
+            addRefreshmentButton.setVisible(false);
+            addResorceButton.setVisible(false);
+            addcleaner.setVisible(false);
+            addrefreshmentbooking.setVisible(false);
+            addresourcebookingbutton.setVisible(false);
+            bookaroombutton.setVisible(false);
+            deliveryTimeText.setVisible(false);
+            deliverytime.setVisible(false);
+            deliverytimelable.setVisible(false);
+            deliverytimestamplable.setVisible(false);
+            endtime.setVisible(false);
+            endtimelable.setVisible(false);
+            endtimestamplable.setVisible(false);
+            endtimetext.setVisible(false);
+            refreshmentText.setVisible(false);
+            refreshmentid.setVisible(false);
+            refreshmentidlable.setVisible(false);
+            resorcelable.setVisible(false);
+            resourcefield.setVisible(false);
+            resourceidlable.setVisible(false);
+            resourceidtext.setVisible(false);
+            roombookingnolable.setVisible(false);
+            roombookingnotext.setVisible(false);
+            roombookingnumber.setVisible(false);
+            roombookingnumberlable.setVisible(false);
+            roomno.setVisible(false);
+            roomnolable.setVisible(false);
+            roomnumber.setVisible(false);
+            roomnumberlable.setVisible(false);
+            starttime.setVisible(false);
+            starttimelable.setVisible(false);
+            starttimestamplable.setVisible(false);
+            starttimetext.setVisible(false);
         }
     }//GEN-LAST:event_viewDataButtonActionPerformed
 
@@ -687,6 +1158,98 @@ public class recordDisplay extends javax.swing.JFrame {
         
     }//GEN-LAST:event_addrefreshmentbookingActionPerformed
 
+    private void addRefreshmentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addRefreshmentButtonActionPerformed
+        
+        try {
+            
+          ResultSet resultset = databaseSQLHandler.executeQuery("select max(customerid) as maxid from app.customer");
+          resultset.next();
+          
+          int idvalue = resultset.getInt("maxid")+1;
+          
+          databaseSQLHandler.executeUpdateQuirey("insert into refreshmentbooking (" + idvalue + ", " + refreshmentText.getText());
+          
+          resultset.close();
+          
+          updateTableData();
+            
+        } catch (Exception e) {
+            System.out.println("Error: " + e);
+        }
+        
+    }//GEN-LAST:event_addRefreshmentButtonActionPerformed
+
+    private void addResorceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addResorceButtonActionPerformed
+        
+        try {
+            
+          ResultSet resultset = databaseSQLHandler.executeQuery("select max(customerid) as maxid from app.customer");
+          resultset.next();
+          
+          int idvalue = resultset.getInt("maxid")+1;
+          
+          databaseSQLHandler.executeUpdateQuirey("insert into refreshmentbooking (" + idvalue + ", " + resourcefield.getText());
+          
+          resultset.close();
+          
+          updateTableData();
+            
+        } catch (Exception e) {
+            System.out.println("Error: " + e);
+        }
+        
+    }//GEN-LAST:event_addResorceButtonActionPerformed
+
+    private void addresourcebookingbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addresourcebookingbuttonActionPerformed
+        
+        try {
+            
+          ResultSet resultset = databaseSQLHandler.executeQuery("select max(customerid) as maxid from app.customer");
+          resultset.next();
+          
+          int idvalue = resultset.getInt("maxid")+1;
+          
+          databaseSQLHandler.executeUpdateQuirey("insert into refreshmentbooking (" + idvalue + ", " + customerid + ", " + roomno + ", " + starttimelable.getText() + ", " + endtimetext.getText());
+          
+          resultset.close();
+          
+          updateTableData();
+            
+        } catch (Exception e) {
+            System.out.println("Error: " + e);
+        }
+        
+    }//GEN-LAST:event_addresourcebookingbuttonActionPerformed
+
+    private void starttimetextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_starttimetextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_starttimetextActionPerformed
+
+    private void endtimetextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_endtimetextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_endtimetextActionPerformed
+
+    private void bookaroombuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bookaroombuttonActionPerformed
+        
+        try {
+            
+          ResultSet resultset = databaseSQLHandler.executeQuery("select max(customerid) as maxid from app.customer");
+          resultset.next();
+          
+          int idvalue = resultset.getInt("maxid")+1;
+          
+          databaseSQLHandler.executeUpdateQuirey("insert into refreshmentbooking (" + idvalue + ", " + roombookingnumber.getText() + ", " + refreshmentid+ ", " + deliverytime.getText());
+          
+          resultset.close();
+          
+          updateTableData();
+            
+        } catch (Exception e) {
+            System.out.println("Error: " + e);
+        }
+        
+    }//GEN-LAST:event_bookaroombuttonActionPerformed
+
     public void updateTableData(){
         
         try {
@@ -760,14 +1323,20 @@ public class recordDisplay extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addCustomerRecord;
+    private javax.swing.JButton addRefreshmentButton;
+    private javax.swing.JButton addResorceButton;
     private javax.swing.JButton addcleaner;
     private javax.swing.JButton addrefreshmentbooking;
+    private javax.swing.JButton addresourcebookingbutton;
+    private javax.swing.JButton bookaroombutton;
     private javax.swing.JLabel companynamelable;
     private javax.swing.JTextField companytextbox;
     private javax.swing.JLabel customeremaillable;
     private javax.swing.JTextField customeremailtextbox;
     private javax.swing.JLabel customerfnamelable;
     private javax.swing.JTextField customerfnametextbox;
+    private javax.swing.JTextField customerid;
+    private javax.swing.JLabel customeridlable;
     private javax.swing.JLabel customerlnamelable;
     private javax.swing.JTextField customerlnametextbox;
     private javax.swing.JButton deleteCustomerRecord;
@@ -777,20 +1346,36 @@ public class recordDisplay extends javax.swing.JFrame {
     private javax.swing.JButton deleteresourcebookingbutton;
     private javax.swing.JButton deleteresourcebutton;
     private javax.swing.JButton deleteroombookingbutton;
+    private javax.swing.JTextField deliveryTimeText;
     private javax.swing.JTextField deliverytime;
+    private javax.swing.JLabel deliverytimelable;
+    private javax.swing.JLabel deliverytimestamplable;
     private javax.swing.JTextField endtime;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel endtimelable;
+    private javax.swing.JLabel endtimestamplable;
+    private javax.swing.JTextField endtimetext;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField refreshmentText;
     private javax.swing.JTextField refreshmentid;
+    private javax.swing.JLabel refreshmentidlable;
+    private javax.swing.JLabel refreshmentlable;
+    private javax.swing.JLabel resorcelable;
+    private javax.swing.JTextField resourcefield;
+    private javax.swing.JLabel resourceidlable;
+    private javax.swing.JTextField resourceidtext;
+    private javax.swing.JLabel roombookingnolable;
+    private javax.swing.JTextField roombookingnotext;
     private javax.swing.JTextField roombookingnumber;
+    private javax.swing.JLabel roombookingnumberlable;
+    private javax.swing.JTextField roomno;
+    private javax.swing.JLabel roomnolable;
     private javax.swing.JTextField roomnumber;
+    private javax.swing.JLabel roomnumberlable;
     private javax.swing.JTable selectedTable;
     private javax.swing.JTextField starttime;
+    private javax.swing.JLabel starttimelable;
+    private javax.swing.JLabel starttimestamplable;
+    private javax.swing.JTextField starttimetext;
     private javax.swing.JComboBox<String> tableSelectBox;
     private javax.swing.JButton viewDataButton;
     // End of variables declaration//GEN-END:variables
